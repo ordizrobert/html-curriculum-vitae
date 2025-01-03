@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- Add Font Awesome for the settings icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space out profile image and settings icon */
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .profile-name {
+            font-size: 15px;
+            font-weight: normal;
+            margin: 5px 0; /* Reduce space between paragraphs */
+            line-height: 1.2; /* Reduce line height to compress text */
+            font-size: 16px; /* Adjust font size if necessary */
+        }
+
+        .settings-icon {
+            font-size: 24px; /* Size of the settings icon */
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with profile image, name, and settings icon -->
+    <div class="header">
+        <div class="profile-section">
+            <img src="https://mobileapp.staffbanana.com/timetracker/API/uploads/images/173517959645957701878891.jpg" alt="Profile Image" class="profile-image">
+            <div class="profile-name">
+                <p>Robert Gonzales Ordiz</p>
+                <p>ordizrobert2011@gmail.com</p>
+                <p>+639662067840</p>
+            </div>
+        </div>
+        <!-- Settings icon (Font Awesome) -->
+        <!--  <i class="fas fa-cogs settings-icon"></i> -->
+        <button class="settings-button">
+            <i class="fas fa-cogs settings-icon"></i>
+        </button>
+    </div>
+
+    <!-- Main content of the page -->
+    <div class="content">
+        <h2>Welcome to my profile page</h2>
+        <p>This is a simple HTML and CSS example showing a profile image in a circle at the top left, with the profile name displayed next to it, and a settings icon in the top right.</p>
+    </div>
+
+            <!-- JavaScript to handle the settings icon click -->
+    <script>
+        document.querySelector('.settings-icon').addEventListener('click', function() {
+            alert('Settings clicked!');
+                    // Add your settings page or menu functionality here
+        });
+    </script>
+
+</body>
+</html>
